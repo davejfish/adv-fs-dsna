@@ -14,4 +14,13 @@ function titleCase(sentence) {
   return result.join(' ');
 }
 
-module.exports = { reverseSentence, titleCase };
+function oddishOrEvenish(number) {
+  const nums = number.split('');
+  const result = nums.reduce((acc, cur) => {
+    return acc += parseInt(cur);
+  }, 0);
+  if (result % 2 === 0) return 'Evenish';
+  return 'Oddish';
+}
+
+module.exports = { reverseSentence, titleCase, oddishOrEvenish };
