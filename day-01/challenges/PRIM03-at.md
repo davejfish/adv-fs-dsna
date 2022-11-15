@@ -16,7 +16,7 @@ You can't use `array.at`, implement your own using:
 Write a function `at` that takes an array and an index and returns the item at corresponding index. **However**, negative indices should work _from the back of the array_.
 
 ```js
-function at(arr, index) {
+function at(arr, index) {}
 ```
 
 > **You can assume valid inputs**

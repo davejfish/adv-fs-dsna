@@ -23,4 +23,12 @@ function oddishOrEvenish(number) {
   return 'Oddish';
 }
 
-module.exports = { reverseSentence, titleCase, oddishOrEvenish };
+function at(arr, index) {
+  if (index >= 0)
+    return arr[index];
+  const reversedArr = arr.reverse();
+  const newIndex = Math.abs(index + 1);
+  return reversedArr[newIndex];
+}
+
+module.exports = { reverseSentence, titleCase, oddishOrEvenish, at };
