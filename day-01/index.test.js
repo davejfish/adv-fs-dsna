@@ -1,4 +1,4 @@
-const { reverseSentence, titleCase, oddishOrEvenish, at, fizzbuzz, multiplesOfN } = require('./index');
+const { reverseSentence, titleCase, oddishOrEvenish, at, fizzbuzz, multiplesOfN, equalSides } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
@@ -33,6 +33,12 @@ describe('primitive code challenges', () => {
       expect(multiplesOfN(5)).toEqual([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
       expect(multiplesOfN(25)).toEqual([25, 50]);
       expect(multiplesOfN(75)).toEqual([]);
+    });
+
+    it('return index of arr where nums on the left = nums on the right', () => {
+      expect(equalSides([1, 2, 3, 4, 3, 2, 1])).toEqual(3);
+      expect(equalSides([1, 100, 50, -51, 1, 1])).toEqual(1);
+      expect(equalSides([20, 10, -80, 10, 10, 15, 35])).toEqual(0);
     });
 
   });

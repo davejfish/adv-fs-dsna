@@ -55,4 +55,17 @@ function multiplesOfN(n) {
   return arr;
 }
 
-module.exports = { reverseSentence, titleCase, oddishOrEvenish, at, fizzbuzz, multiplesOfN };
+function equalSides(numbers) {
+  let left = 0;
+  let right = numbers.reduce((acc, cur) => acc + cur, 0);
+  for (let i = 0; i < numbers.length; ++i) {
+    right -= numbers[i];
+    if (left === right)
+      return i;
+    left += numbers[i];
+  }
+  // if no answer
+  return -1;
+}
+
+module.exports = { reverseSentence, titleCase, oddishOrEvenish, at, fizzbuzz, multiplesOfN, equalSides };

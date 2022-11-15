@@ -8,7 +8,7 @@ You are going to be given an array of integers. Your job is to take that array a
 If you are given an array with multiple answers, return the lowest correct index. An empty array should return `0` in this problem.
 
 ```js
-function equalSides(numbers) {
+function equalSides(numbers) {}
 ```
 
 > **You can assume valid input**
