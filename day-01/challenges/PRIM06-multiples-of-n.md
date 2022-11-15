@@ -11,7 +11,7 @@ Write a function that takes a positive integer `n`, and returns an array that co
 **HINT:** Use the `for` loop options to controlling the step size
 
 ```js
-function multiplesOfN(n) {
+function multiplesOfN(n) {}
 ```
 
 > **You can assume valid input**

@@ -46,4 +46,13 @@ function fizzbuzz(number) {
   return arr;
 }
 
-module.exports = { reverseSentence, titleCase, oddishOrEvenish, at, fizzbuzz };
+function multiplesOfN(n) {
+  const arr = [];
+  for (let i = 1; i <= 50; ++i) {
+    if (i % n === 0)
+      arr.push(i);
+  }
+  return arr;
+}
+
+module.exports = { reverseSentence, titleCase, oddishOrEvenish, at, fizzbuzz, multiplesOfN };

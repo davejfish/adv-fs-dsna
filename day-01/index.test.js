@@ -1,4 +1,4 @@
-const { reverseSentence, titleCase, oddishOrEvenish, at, fizzbuzz } = require('./index');
+const { reverseSentence, titleCase, oddishOrEvenish, at, fizzbuzz, multiplesOfN } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
@@ -28,6 +28,12 @@ describe('primitive code challenges', () => {
         16
       ]);
     });
-  });
 
+    it('return an arr of all nums multiples of n', () => {
+      expect(multiplesOfN(5)).toEqual([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
+      expect(multiplesOfN(25)).toEqual([25, 50]);
+      expect(multiplesOfN(75)).toEqual([]);
+    });
+
+  });
 });
