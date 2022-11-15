@@ -68,4 +68,28 @@ function equalSides(numbers) {
   return -1;
 }
 
-module.exports = { reverseSentence, titleCase, oddishOrEvenish, at, fizzbuzz, multiplesOfN, equalSides };
+const addPunctuation = (punc) => {
+  return (sentence) => sentence + punc;
+};
+
+function repeat(txt, n) {
+  let result = '';
+  while (n > 0) {
+    n -= 1;
+    result += txt;
+    repeat(txt, n);
+  }
+  return result;
+}
+
+module.exports = { 
+  reverseSentence, 
+  titleCase, 
+  oddishOrEvenish, 
+  at, 
+  fizzbuzz, 
+  multiplesOfN, 
+  equalSides,
+  addPunctuation,
+  repeat
+};

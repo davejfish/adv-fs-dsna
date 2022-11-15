@@ -12,7 +12,7 @@ Create a recursive function that takes two parameters and repeats the string n n
 **Make your function recursive**.
 
 ```js
-function repeat(txt, n) {
+function repeat(txt, n) {}
 ```
 
 > **You can assume valid inputs
