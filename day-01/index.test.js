@@ -1,4 +1,4 @@
-const { reverseSentence, titleCase, oddishOrEvenish, at } = require('./index');
+const { reverseSentence, titleCase, oddishOrEvenish, at, fizzbuzz } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
@@ -18,6 +18,15 @@ describe('primitive code challenges', () => {
     it('returns the index, negative numbers work backwards', () => {
       expect(at(['a', 'b', 'c', 'd', 'e'], 1)).toEqual('b');
       expect(at(['a', 'b', 'c', 'd', 'e'], -2)).toEqual('d');
+    });
+
+    it('fizzbuzz', () => {
+      expect(fizzbuzz(16)).toEqual([
+        1, 2, 'Fizz', 4, 'Buzz', 
+        'Fizz', 7, 8, 'Fizz', 'Buzz', 
+        11, 'Fizz', 13, 14, 'FizzBuzz', 
+        16
+      ]);
     });
   });
 

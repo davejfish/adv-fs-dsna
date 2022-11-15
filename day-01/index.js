@@ -8,8 +8,7 @@ function reverseSentence(str) {
 function titleCase(sentence) {
   const parts = sentence.split(' ');
   const result = parts.map(part => {
-    const lc = part.toLowerCase();
-    return lc[0].toUpperCase() + lc.slice(1);
+    return part[0].toUpperCase() + part.slice(1).toLowerCase();
   });
   return result.join(' ');
 }
@@ -31,4 +30,20 @@ function at(arr, index) {
   return reversedArr[newIndex];
 }
 
-module.exports = { reverseSentence, titleCase, oddishOrEvenish, at };
+function fizzbuzz(number) {
+  const arr = [];
+
+  for (let i = 1; i <= number; ++i) {
+    if (i % 3 === 0 && i % 5 === 0)
+      arr.push('FizzBuzz');
+    else if (i % 3 === 0)
+      arr.push('Fizz');
+    else if (i % 5 === 0)
+      arr.push('Buzz');
+    else 
+      arr.push(parseInt(i));
+  }
+  return arr;
+}
+
+module.exports = { reverseSentence, titleCase, oddishOrEvenish, at, fizzbuzz };
