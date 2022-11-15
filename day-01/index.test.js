@@ -1,4 +1,4 @@
-const { reverseSentence } = require('./index');
+const { reverseSentence, titleCase } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
@@ -6,4 +6,11 @@ describe('primitive code challenges', () => {
       expect(reverseSentence('alchemy rocks gold')).toBe('ymehcla skcor dlog');
     });
   });
+
+  describe('title case', () => {
+    it('should capitalize first letter of each word, lowercase the rest', () => {
+      expect(titleCase('alchemy ROCKS goLD')).toBe('Alchemy Rocks Gold');
+    });
+  });
+
 });

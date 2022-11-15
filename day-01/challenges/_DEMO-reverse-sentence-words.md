@@ -12,7 +12,7 @@ Write a function that takes a sentence string and returns a new string that is t
 **HINT:** Maybe arrays already have a way to do this?
 
 ```js
-function reverseWords(sentence) {
+function reverseWords(sentence) {}
 ```
 
 > **You can assume valid inputs and no punctuation**
